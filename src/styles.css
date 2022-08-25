@@ -1,0 +1,36 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 350px;
+  height: 350px;
+  background: chartreuse;
+  text-align: center;
+}
+
+@media (min-width: 250px) and (max-width: 460px) {
+  .box {
+    background: fuchsia;
+  }
+}
+@media (min-width: 461px) and (max-width: 900px) {
+  .box {
+    background: goldenrod;
+  }
+}
+
+@media (min-width: 901px) {
+  .box {
+    background: hotpink;
+  }
+}
+
+@media (max-width: 249px) {
+  .box {
+    background: dodgerblue;
+  }
+}
